@@ -9,6 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@Builder
 @Table(name = "Videos")
 @NamedQuery(name = "Video.findAll", query = "SELECT v FROM Video v")
 
