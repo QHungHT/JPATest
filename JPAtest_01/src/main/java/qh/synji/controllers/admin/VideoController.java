@@ -114,7 +114,7 @@ public class VideoController extends HttpServlet {
             // Service
             videoService.insert(video);
             //
-            resp.sendRedirect(req.getContextPath() + "/admin/category?id=" + categoryId);
+            resp.sendRedirect(req.getContextPath() + "/admin/videos");
         } else if (url.contains("/admin/video/edit")) {
             // Get data from view
             String videoId = req.getParameter("videoId");
@@ -162,7 +162,7 @@ public class VideoController extends HttpServlet {
             // Service
             videoService.update(video);
             //
-            resp.sendRedirect(req.getContextPath() + "/admin/category?id=" + categoryId);
+            resp.sendRedirect(req.getContextPath() + "/admin/videos");
         }
     }
 }

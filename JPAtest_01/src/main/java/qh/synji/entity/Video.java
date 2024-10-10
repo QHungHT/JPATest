@@ -19,6 +19,7 @@ public class Video implements Serializable {
 
 	@Id
 	@Column(name = "VideoId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  // hoặc GenerationType.AUTO
 	private String videoId;
 
 	@Column(name = "Active")
